@@ -34,23 +34,6 @@ const FormItem = Form.Item;
 const Option = Select.Option;
 const RadioGroup = Radio.Group;
 
-// const Error = ({ name }) => (
-//   <Field
-//     name={name}
-//     render={({ form: { touched, errors } }) =>
-//       touched[name] && errors[name] ? <span>{errors[name]}</span> : null
-//     }
-//   />
-// );
-
-// const Fieldset = ({ name, label, ...rest }) => (
-//   <React.Fragment>
-//     <label htmlFor={name}>{label}</label>
-//     <Field id={name} name={name} {...rest} />
-//     <ErrorMessage name={name} />
-//   </React.Fragment>
-// );
-
 function Fieldset(props) {
   return (
     <React.Fragment>
@@ -202,7 +185,7 @@ export class QuestionnaireForm extends Component {
                             return (
                               <div
                                 className={cx(Styles.wizardPage, {
-                                  [Styles.show]: page.page.number - 1 === current
+                                  [Styles.show]: page.pageNumber - 1 === current
                                 })}
                                 key={getUniqueID()}
                               >
@@ -231,7 +214,6 @@ export class QuestionnaireForm extends Component {
                                                 placeholder={question.label || undefined}
                                                 // {stringToComponentMapper[props.element]}
                                                 // onChange={this.handleChange}
-                                                // validate={validate(f.validationRule)}
                                               />
                                             </FormItem>
                                           </div>
