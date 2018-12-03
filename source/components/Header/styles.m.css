@@ -1,0 +1,63 @@
+@import "../../theme/palette";
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  /*height: 42px;*/
+  border-bottom: var(--paletteColor12);
+  /*background-color: var(--paletteColor5);*/
+  padding: 0 5px;
+  z-index: 1;
+
+  & div {
+    display: flex;
+
+    & a:first-child {
+      margin-right: 5px;
+    }
+  }
+
+  & img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border: 1px solid var(--rgbaColor1);
+    border-radius: 50%;
+  }
+
+  & .active {
+    background: var(--rgbaColor2);
+  }
+
+  & .hidden {
+    visibility: hidden;
+    flex-grow: 0;
+  }
+
+  & .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    -min-width: 80px;
+    height: 24px;
+    background: #e9ebee;
+    color: #365899;
+    border: 1px solid #365899;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 5px;
+
+    & span {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`profile actions: clearProfile snapshot 1`] = `
+Object {
+  "type": "CLEAR_PROFILE",
+}
+`;
+
+exports[`profile actions: fillProfile snapshot 1`] = `
+Object {
+  "payload": Object {
+    "avatar": "TEST_AVATAR",
+    "firstName": "TEST_FIRST_NAME",
+    "id": "TEST_ID",
+    "lastName": "TEST_LAST_NAME",
+    "token": "TEST_TOKEN",
+  },
+  "type": "FILL_PROFILE",
+}
+`;
+
+exports[`profile actions: updateAvatar snapshot 1`] = `
+Object {
+  "payload": "https://www.url.com",
+  "type": "UPDATE_AVATAR",
+}
+`;
+
+exports[`profile actions: updateAvatarAsync snapshot 1`] = `
+Object {
+  "payload": Object {
+    "avatar": "TEST_AVATAR",
+    "firstName": "TEST_FIRST_NAME",
+    "id": "TEST_ID",
+    "lastName": "TEST_LAST_NAME",
+    "token": "TEST_TOKEN",
+  },
+  "type": "UPDATE_AVATAR_ASYNC",
+}
+`;
+
+exports[`profile actions: updateNameAsync snapshot 1`] = `
+Object {
+  "payload": Object {
+    "avatar": "TEST_AVATAR",
+    "firstName": "TEST_FIRST_NAME",
+    "id": "TEST_ID",
+    "lastName": "TEST_LAST_NAME",
+    "token": "TEST_TOKEN",
+  },
+  "type": "UPDATE_NAME_ASYNC",
+}
+`;
+
+exports[`profile actions: updatePasswordAsync snapshot 1`] = `
+Object {
+  "payload": Object {
+    "avatar": "TEST_AVATAR",
+    "firstName": "TEST_FIRST_NAME",
+    "id": "TEST_ID",
+    "lastName": "TEST_LAST_NAME",
+    "token": "TEST_TOKEN",
+  },
+  "type": "UPDATE_PASSWORD_ASYNC",
+}
+`;

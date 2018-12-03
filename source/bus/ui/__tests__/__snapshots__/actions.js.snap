@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ui actions: emitError snapshot 1`] = `
+Object {
+  "error": true,
+  "meta": "meta info",
+  "payload": [Error: TEST_ERROR_MESSAGE.],
+  "type": "EMIT_ERROR",
+}
+`;
+
+exports[`ui actions: emitError with fallback params snapshot 1`] = `
+Object {
+  "error": true,
+  "meta": null,
+  "payload": [Error: TEST_ERROR_MESSAGE.],
+  "type": "EMIT_ERROR",
+}
+`;
+
+exports[`ui actions: hideNotification 1`] = `
+Object {
+  "type": "HIDE_NOTIFICATION",
+}
+`;
+
+exports[`ui actions: setOfflineState snapshot 1`] = `
+Object {
+  "type": "SET_OFFLINE_STATE",
+}
+`;
+
+exports[`ui actions: setOnlineState snapshot 1`] = `
+Object {
+  "type": "SET_ONLINE_STATE",
+}
+`;
+
+exports[`ui actions: showNotification snapshot 1`] = `
+Object {
+  "payload": Object {
+    "id": "123",
+    "message": "login fail",
+    "source": "login worker",
+    "type": "error",
+  },
+  "type": "SHOW_NOTIFICATION",
+}
+`;
+
+exports[`ui actions: showNotification with fallback params snapshot 1`] = `
+Object {
+  "payload": Object {
+    "id": "123",
+    "message": undefined,
+    "source": "",
+    "type": "login fail",
+  },
+  "type": "SHOW_NOTIFICATION",
+}
+`;
+
+exports[`ui actions: startFetching snapshot 1`] = `
+Object {
+  "type": "START_FETCHING",
+}
+`;
+
+exports[`ui actions: stopFetching snapshot 1`] = `
+Object {
+  "type": "STOP_FETCHING",
+}
+`;

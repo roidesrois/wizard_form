@@ -1,0 +1,8 @@
+export const types = Object.freeze({
+    // Sync
+    FILL_QUESTIONNAIRE: 'FILL_QUESTIONNAIRE',
+    // SET_QUESTIONNAIRE:  'SET_QUESTIONNAIRE',
+
+    // Async
+    FETCH_QUESTIONNAIRE_ASYNC: 'FETCH_QUESTIONNAIRE_ASYNC',
+});

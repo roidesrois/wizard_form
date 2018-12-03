@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`profile reducer: should handle clearProfile action 1`] = `Immutable.Map {}`;
+
+exports[`profile reducer: should handle fillProfile action 1`] = `
+Immutable.Map {
+  "id": "TEST_ID",
+  "avatar": "TEST_AVATAR",
+  "firstName": "TEST_FIRST_NAME",
+  "lastName": "TEST_LAST_NAME",
+  "token": "TEST_TOKEN",
+}
+`;
+
+exports[`profile reducer: should handle updateAvatar action 1`] = `
+Immutable.Map {
+  "id": "",
+  "avatar": "https://www.url.com",
+  "firstName": "",
+  "lastName": "",
+  "token": "",
+}
+`;
+
+exports[`profile reducer: should return initial state by default 1`] = `
+Immutable.Map {
+  "id": "",
+  "avatar": "",
+  "firstName": "",
+  "lastName": "",
+  "token": "",
+}
+`;
